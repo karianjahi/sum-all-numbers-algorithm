@@ -3,10 +3,8 @@ Take an array of two numbers and returns the sum of those two numbers plust the 
 */
 
 const sumAll = (anArrayOfTwoNumbers) => {
-    let firstNo = anArrayOfTwoNumbers[0];
-    let secondNo = anArrayOfTwoNumbers[1];
-    if (firstNo > secondNo) anArrayOfTwoNumbers = [secondNo, firstNo];
-    return anArrayOfTwoNumbers
+    if (anArrayOfTwoNumbers[0] > anArrayOfTwoNumbers[1]) anArrayOfTwoNumbers = [anArrayOfTwoNumbers[1], anArrayOfTwoNumbers[0]];
+    return anArrayOfTwoNumbers;
 
 }
 

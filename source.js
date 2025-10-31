@@ -3,7 +3,11 @@ Take an array of two numbers and returns the sum of those two numbers plust the 
 */
 
 const sumAll = (anArrayOfTwoNumbers) => {
-    return anArrayOfTwoNumbers;
+    let firstNo = anArrayOfTwoNumbers[0];
+    let secondNo = anArrayOfTwoNumbers[1];
+    if (firstNo > secondNo) anArrayOfTwoNumbers = [secondNo, firstNo];
+    return anArrayOfTwoNumbers
+
 }
 
 // Test
